@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techinal Document</title>
+    <style>
+        body {
+            align-items: center;
+            color: rgb(34, 4, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgba(212, 241, 241, 0.4);
+        }
+        
+        #main_doc {
+            position: absolute;
+            margin-bottom: 19%;
+        }
+        
+        .main_section {
+            padding: 2%;
+            display: block;
+        }
+        
+        header {
+            font-weight: bold;
+        }
+        
+        #Introduction {
+            margin-left: 20%;
+            margin-top: 3%;
+        }
+        
+        #basic_structure {
+            margin-left: 20%;
+            margin-right: 12%;
+        }
+        
+        #first_code {
+            margin-left: 20%;
+            margin-right: 12%;
+        }
+        
+        #data-type {
+            margin-left: 20%;
+            margin-right: 12%;
+        }
+        
+        #if_else {
+            margin-left: 20%;
+            margin-right: 12%;
+        }
+        
+        #loop {
+            margin-left: 20%;
+            margin-right: 12%;
+        }
+        
+        #For_loop {
+            margin-left: 20%;
+            margin-right: 12%;
+        }
+        
+        #while_loop {
+            margin-left: 20%;
+            margin-right: 12%;
+        }
+        
+        #do_while_loop {
+            margin-left: 20%;
+            margin-right: 12%;
+            margin-bottom: 4%;
+        }
+        
+        code {
+            font-size: 120%;
+            background-color: rgb(243, 232, 243);
+            width: 30%;
+            display: block;
+        }
+        
+        #navbar {
+            float: left;
+            padding-left: 3%;
+            padding: 1.3%;
+            border-right: double;
+            border-left: double;
+            border-top: double;
+            border-bottom: double;
+            overflow: visible;
+            width: 14%;
+            min-width: 290 px;
+            font-size: 130%;
+            position: fixed;
+        }
+        
+        nav {
+            display: block;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        
+        @media (max-width:900px) {
+            h1 {
+                font-size: 90%;
+            }
+            body {
+                background-color: lightblue;
+                font-size: 90%;
+            }
+            header {
+                font-size: 70%;
+            }
+            a {
+                font-size: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main_doc">
+        <section>
+
+            <nav id="navbar">
+                <header>
+                    <h1>
+                        C Documentation
+                    </h1>
+                </header>
+                <br>
+                <a href="#Introduction" class=" nav-link">Introduction</a><br><br>
+                <hr>
+                <a href="#basic_structure" class=" nav-link">Basic structure</a><br><br>
+                <hr>
+                <a href="#first_code" class=" nav-link">First Code</a><br><br>
+                <hr>
+                <a href="#data-type" class=" nav-link">Data Types</a><br><br>
+                <hr>
+                <a href="#if_else" class=" nav-link">If else</a><br><br>
+                <hr>
+                <a href="#loop" class=" nav-link">Loops</a><br><br>
+                <hr>
+                <a href="#For_loop" class=" nav-link">For Loop</a><br><br>
+                <hr>
+                <a href="#while_loop" class=" nav-link">While Loop</a><br><br>
+                <hr>
+                <a href="#do_while_loop" class=" nav-link">Do while Loop</a>
+            </nav>
+        </section>
+        <section class="main-section" id="Introduction">
+            <header>
+                <h1>Introduction</h1>
+            </header>
+            <p>C is a procedural programming language. It was initially developed by Dennis Ritchie in the year 1972. It was mainly developed as a system programming language to write an operating system. The main features of the C language include low-level
+                memory access, a simple set of keywords, and a clean style, these features make C language suitable for system programmings like an operating system or compiler development. </p>
+            <p>Many later languages have borrowed syntax/features directly or indirectly from the C language. Like syntax of Java, PHP, JavaScript, and many other languages are mainly based on the C language. C++ is nearly a superset of C language (Few programs
+                may compile in C, but not in C++).
+            </p>
+            <p>C has now become a widely used professional language for various reasons.
+            </p>
+
+            <ul>
+                <li>Easy to learn</li>
+                <li>Structured language</li>
+                <li>It produces efficient programs</li>
+                <li>It can be compiled on a variety of computers</li>
+            </ul>
+
+        </section>
+
+        <section class="main-section" id="basic_structure">
+            <header>
+                <h1>Program structure</h1>
+            </header>
+            <p>A C program basically has the following form:</p>
+            <ul>
+                <li>Preprocessor Commands</li>
+                <li>Functions</li>
+                <li>Variables</li>
+                <li>Statements & Expressions</li>
+                <li>Comments</li>
+            </ul>
+
+        </section>
+
+        <section class="main-section" id="first_code">
+
+            <header>
+                <h1>First code</h1>
+            </header>
+            <code>#include <stdio.h>
+    
+                    int main()<br>
+                    {<br>
+                       /* My first program */<br>
+                       printf("Hello, World! \n");<br>
+                       
+                       return 0;<br>
+                    }<br></code>
+
+        </section>
+
+        <section class="main-section" id="data-type">
+
+            <header>
+                <h1>Data Types</h1>
+            </header>
+            <p>Data types in C language:</p>
+            <ul>
+                <li>Char</li>
+                <li>Int</li>
+                <li>Float</li>
+                <li>String</li>
+                <li>Boolean</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="if_else">
+            <header>
+                <h1>
+                    If...Else
+
+                </h1>
+            </header>
+
+            <p>If else can be used for different type of conditions.</p>
+            <p>Syntax for if</p>
+            <code>if()<br> {<br> .....<br> }<br></code>
+            <p>Syntax for if-else</p>
+            <code>if()<br> {<br> .....<br> }<br>else()<br>{<br>...<br>}</code>
+        </section>
+
+        <section class="main-section" id="loop">
+            <header>
+                <h1>Loops</h1>
+            </header>
+            <p>There are different types of loops in C language</p>
+            <ul>
+                <li>For Loop</li>
+                <li>While Loop</li>
+                <li>Do while Loop</li>
+            </ul>
+
+        </section>
+
+        <section class="main-section" id="For_loop">
+            <header>
+                <h1>For Loop</h1>
+            </header>
+            <p>For Loop</p>
+            <code>for()
+                    <br>
+                    {
+                        <br>.....<br></code>
+            <p>Nested For loop</p>
+            <code>for()<br>{<br>for()<br>{<br>...<br>}<br>}</code>
+
+        </section>
+
+        <section class="main-section" id="while_loop">
+            <header>
+                <h1>While Loop</h1>
+            </header>
+            <p>Syntax for While loop</p>
+            <code>while()<br>{<br>......<br>}<br></code>
+        </section>
+
+        <section class="main-section" id="do_while_loop">
+            <header>
+                <h1>Do While Loop</h1>
+            </header>
+            <p>Syntax for While loop</p>
+            <code>do<br>{<br>......<br>}while();<br></code>
+        </section>
+    </main>
+</body>
+
+</html>
